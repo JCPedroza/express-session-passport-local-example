@@ -1,0 +1,9 @@
+extends master-layout
+
+block content
+  form(action="" method="POST")
+    .form-field
+      p You are logged in as #{username}
+
+    .form-field
+      button(type="submit") logout

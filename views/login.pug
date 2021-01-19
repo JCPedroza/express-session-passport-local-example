@@ -1,0 +1,17 @@
+extends master-layout
+
+block content
+  form(action="" method="POST")
+    .form-field
+      label(for="username") username
+      input#username(type="text" name="username" autofocus required)
+
+    .form-field
+      label(for="password") password
+      input#password(type="password" name="password" required)
+
+    .form-field
+      button(type="submit") login
+
+    .form-field
+      p #{status}

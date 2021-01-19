@@ -1,0 +1,22 @@
+extends master-layout
+
+block scripts
+  include /scripts/register.js
+
+block content
+  form(action="" method="POST")
+    .form-field
+      label(for="username") username
+      input#username(type="text" name="username" autofocus required)
+
+    .form-field
+      label(for="password") password
+      input#password(type="password" name="password" required)
+      button#seepw(type="button") seepw
+
+    .form-field
+      label(for="email") email
+      input#email(type="email" name="email" required)
+
+    .form-field
+      button(type="submit") register
