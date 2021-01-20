@@ -1,5 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 html,
-body {
+body,
+main {
   margin: 0;
-  padding: 0
+  padding: 0;
+  height: 100%
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
 }

@@ -1,8 +1,9 @@
 const passport = require('passport')
 
 function get (req, res, nxt) {
+  const title = 'Login'
   const status = req.flash('error')
-  const locals = { status }
+  const locals = { title, status }
   res.render('login', locals)
 }
 

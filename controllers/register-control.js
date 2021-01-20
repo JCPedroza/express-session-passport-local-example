@@ -3,7 +3,9 @@ const { hash } = require('bcrypt')
 const User = require('../models/user-model')
 
 function get (req, res, nxt) {
-  res.render('register')
+  const title = 'Register'
+  const locals = { title }
+  res.render('register', locals)
 }
 
 async function post (req, res, nxt) {

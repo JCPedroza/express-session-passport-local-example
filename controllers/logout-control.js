@@ -1,6 +1,7 @@
 function get (req, res, nxt) {
+  const title = 'Logout'
   const username = req.user.username
-  const locals = { username }
+  const locals = { title, username }
   res.render('logout', locals)
 }
 

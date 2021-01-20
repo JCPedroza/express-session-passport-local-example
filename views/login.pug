@@ -1,5 +1,11 @@
 extends master-layout
 
+block scripts
+  include /scripts/seepw.js
+
+block styles
+  include /styles/form.css
+
 block content
   form(action="" method="POST")
     .form-field
@@ -9,6 +15,7 @@ block content
     .form-field
       label(for="password") password
       input#password(type="password" name="password" required)
+      button#seepw(type="button") seepw
 
     .form-field
       button(type="submit") login
